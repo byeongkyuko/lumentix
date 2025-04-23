@@ -1,0 +1,185 @@
+
+body {
+  margin: 0;
+  font-family: 'Noto Sans KR', Arial, sans-serif;
+  background: #f7f9fb;
+  color: #222;
+}
+header {
+  background: #003366;
+  color: #fff;
+  padding: 24px 0 12px 0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+.nav {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 32px;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.logo img {
+  height: 44px;
+  margin-right: 18px;
+}
+.menu {
+  display: flex;
+  gap: 32px;
+}
+.menu a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.08rem;
+  font-weight: 500;
+  transition: opacity .2s;
+  opacity: 0.88;
+}
+.menu a:hover { opacity: 1; }
+/* 메인 Hero 섹션 */
+.hero {
+  background: linear-gradient(120deg, #003366 70%, #3277b4 100%);
+  color: #fff;
+  text-align: center;
+  padding: 70px 0 50px 0;
+}
+.hero h1 {
+  font-size: 2.7rem;
+  margin-bottom: 15px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+.hero p.slogan {
+  font-size: 1.32rem;
+  margin-bottom: 34px;
+  font-weight: 500;
+  color: #ffea84;
+}
+.hero p.desc {
+  font-size: 1.13rem;
+  opacity: 0.92;
+  margin-bottom: 40px;
+}
+/* 서비스 아이콘 섹션 */
+.services {
+  max-width: 1100px;
+  margin: -40px auto 0 auto;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 4px 16px rgba(0,34,64,0.06);
+  padding: 44px 32px 36px 32px;
+  display: flex;
+  gap: 32px;
+  justify-content: space-around;
+  position: relative;
+  top: -30px;
+}
+.service {
+  flex: 1;
+  min-width: 150px;
+  text-align: center;
+}
+.service-icon {
+  font-size: 2.4rem;
+  margin-bottom: 14px;
+}
+.service-title {
+  font-weight: 700;
+  margin-bottom: 7px;
+  color: #003366;
+  font-size: 1.08rem;
+}
+.service-desc {
+  font-size: 0.97rem;
+  color: #444;
+  opacity: 0.85;
+}
+/* 대표자 */
+.ceo {
+  max-width: 1100px;
+  margin: 38px auto 0 auto;
+  padding: 26px 32px;
+  background: #f3f7fb;
+  border-radius: 15px;
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+  box-shadow: 0 2px 12px rgba(0,30,80,0.03);
+}
+.ceo-photo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: #ddd;
+  background-image: url('https://www.gravatar.com/avatar/00000000000000000000000000000000?d=mp&f=y');
+  background-size: cover;
+  background-position: center;
+}
+.ceo-info {
+  flex: 1;
+}
+.ceo-info h2 {
+  font-size: 1.23rem;
+  font-weight: 700;
+  margin-bottom: 5px;
+  color: #003366;
+}
+.ceo-info p.ceoname {
+  margin: 0 0 7px 0;
+  color: #222;
+  font-size: 1.03rem;
+  font-weight: 500;
+}
+.ceo-info p {
+  margin: 0 0 9px 0;
+  font-size: 0.97rem;
+  color: #444;
+  opacity: 0.87;
+}
+/* 연락처 퀵영역 */
+.quick-contact {
+  max-width: 1100px;
+  margin: 32px auto 0 auto;
+  text-align: center;
+  padding: 30px 0;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 4px 12px rgba(0,40,100,0.06);
+}
+.quick-contact a {
+  background: #003366;
+  color: #fff;
+  padding: 14px 34px;
+  border-radius: 7px;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 1.14rem;
+  transition: background .16s;
+  margin: 0 12px;
+  display: inline-block;
+}
+.quick-contact a:hover {
+  background: #245098;
+}
+/* Footer */
+footer {
+  background: #1a2533;
+  color: #fff;
+  text-align: center;
+  padding: 22px 0 13px 0;
+  margin-top: 38px;
+  font-size: 0.97rem;
+  opacity: 0.84;
+}
+@media (max-width: 800px) {
+  .services, .ceo { flex-direction: column; gap: 18px; }
+  .services { padding: 32px 10px; }
+  .ceo { padding: 18px 8px; }
+}
