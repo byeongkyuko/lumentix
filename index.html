@@ -20,6 +20,7 @@
         <a href="#portfolio">Portfolio</a>
         <a href="#contact">Contact</a>
       </div>
+      <button class="menu-toggle" onclick="toggleMenu()">☰</button>
     </nav>
   </header>
   <section class="hero">
@@ -66,5 +67,12 @@
   <footer>
     &copy; 2025 LUMENTIX. All Rights Reserved. | 대표: 고병규
   </footer>
+  <script>
+function toggleMenu() {
+  var menu = document.querySelector('.menu');
+  menu.classList.toggle('active');
+}
+</script>
+
 </body>
 </html>
