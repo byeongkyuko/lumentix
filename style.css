@@ -161,7 +161,8 @@ header {
   height: 90px;
   border-radius: 50%;
   background: #ddd;
-  background-image: url('https://www.gravatar.com/avatar/00000000000000000000000000000000?d=mp&f=y');
+  /* background-image: url('https://www.gravatar.com/avatar/00000000000000000000000000000000?d=mp&f=y'); */
+  background-image: url('/bk.jpg');
   background-size: cover;
   background-position: center;
 }
